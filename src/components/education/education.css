@@ -1,5 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
-.text-shpere{
+/* .text-shpere{
     position: relative;
     top: 0;
     width: 100%;
@@ -24,4 +24,90 @@
 }
 .tagcloud--item:hover{
     color: #ff6347;
+} */
+
+.skill__container{
+    display: grid;
+    grid-template-columns: repeat(5,1fr);
+    gap: 1.5rem;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
 }
+.skill__card{
+    background: rgb(82, 82, 85);
+}
+.skill__list{
+    list-style: none;
+}
+.skill__list > li{
+    font-size: small;
+    position: relative;
+    top: -2rem;
+}
+.skill__card{
+    background-color: var(--color-bg-variant);
+    border-radius: 1rem;
+    padding: 2rem;
+    padding-bottom: 0;
+}
+.skill__card:hover{
+    background: transparent;
+    border: 1px solid var(--color-primary-variant);
+    transition: var(--transition);
+}
+.skill__name{
+    font-size: 1.3rem;
+    text-align: center;
+    margin-bottom: 1rem;
+}
+#skill{
+    height: fit-content;
+}
+.skill__card-item{
+    position: relative;
+}
+.skill__icon{
+    position: relative;
+    /* border-radius: 50%; */
+    /* background: green; */
+    border-bottom-left-radius: 50%;
+    border-bottom-right-radius: 50%;
+    background: var(--color-bg);
+    /* left: 35%; */
+    top: -6rem;
+    font-size: 2rem;
+    height: 40px;
+    width: 40px;
+    text-align: center;
+    margin: auto;
+}
+.skill__icon > svg{
+    top: -5px;
+    position: relative;
+}
+.tick{
+    color: blue;
+    text-align: center;
+    position: relative;
+    top: 2px;
+}
+#skill{
+    margin-bottom: 0;
+}
+/* ================Medium Devices =============*/
+@media  screen and (max-width: 1024px) {
+    .skill__container{
+        grid-template-columns: repeat(3,1fr);
+    }
+    #skill{
+        margin-bottom: 0;
+    }
+ }
+
+
+/* ================Small Devices =============*/
+@media  screen and (max-width: 600px){
+    .skill__container{
+        grid-template-columns: repeat(2,1fr);
+    }
+ }
