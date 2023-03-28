@@ -21,10 +21,6 @@
 .project__item-image{
     border-radius: 1.5rem;
     overflow: hidden;
-    height: 200px;
-}
-.project__item-image > img{
-    height: 100%;
 }
 .project__item h3{
     margin: 1.2rem 0 1.2rem;
@@ -35,8 +31,8 @@
     margin-bottom: 1rem;
 }
 
-#project{
-    margin-top: 4rem;
+#comming{
+    cursor: not-allowed;
 }
 
 /* ================Medium Devices =============*/
@@ -46,7 +42,6 @@
         grid-template-columns: repeat(2,1fr);
         gap: 1.2rem;
     }
-    
 }
 /* ================Small Devices =============*/
 @media  screen and (max-width: 600px){

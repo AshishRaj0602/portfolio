@@ -1,11 +1,13 @@
 import React from 'react'
 import './portfolio.css'
-import IMG1 from '../../assets/portfolio1.jpg'
-import IMG2 from '../../assets/portfolio2.jpg'
-import IMG3 from '../../assets/portfolio3.jpg'
-import IMG4 from '../../assets/portfolio4.jpg'
-import IMG5 from '../../assets/portfolio5.png'
+import IMG1 from '../../assets/millionaire.jpg'
+import IMG2 from '../../assets/onlinePayment.jpg'
+import IMG3 from '../../assets/snake.jpg'
+import IMG4 from '../../assets/slack6.png'
+import IMG5 from '../../assets/portfolio.jpg'
+import IMG6 from '../../assets/portfolio3.jpg'
 import Project from './ProjectCard'
+import ComminSoon from './ComminSoon'
 const Portfolio = () => {
   return (
     <section id='project'>
@@ -13,11 +15,12 @@ const Portfolio = () => {
       <h2>Project</h2>
 
       <div className="container project__container">
-        <Project img={IMG1}/>
-        <Project img={IMG2}/>
-        <Project img={IMG3}/>
-        <Project img={IMG4}/>
-        <Project img={IMG5}/>
+        <Project img={IMG1} text="Millionaire Game" github="https://github.com/AshishRaj0602/MillionaireApp" live="https://millionaire0602.netlify.app/"/>
+        <Project img={IMG2} text="Online Payment App" github="" live=""/>
+        <Project img={IMG3} text="Snake Game" github="https://github.com/AshishRaj0602/Snake-game" live="https://verdant-axolotl-0ccb2e.netlify.app/"/>
+        <Project img={IMG4} text="Slack Clone" github="https://github.com/AshishRaj0602/myslack" live="https://ashishraj0602.github.io/myslack"/>
+        <Project img={IMG5} text="My Portfolio" github="" live=""/>
+        <ComminSoon img={IMG6} text="Airbnb clone"/>
         {/* <article className='project__item'>
           <div className="project__item-image">
             <img src={IMG1} alt="" />

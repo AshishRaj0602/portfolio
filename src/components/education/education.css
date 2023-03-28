@@ -86,21 +86,24 @@
     position: relative;
 }
 .tick{
-    color: blue;
+    color: brown;
     text-align: center;
     position: relative;
     top: 2px;
 }
 #skill{
-    margin-bottom: 0;
+    min-height: auto;
+}
+.skill__container>*:nth-child(6){
+    display: none;
 }
 /* ================Medium Devices =============*/
 @media  screen and (max-width: 1024px) {
     .skill__container{
         grid-template-columns: repeat(3,1fr);
     }
-    #skill{
-        margin-bottom: 0;
+    .skill__container>*:nth-child(6){
+        display: block;
     }
  }
 
