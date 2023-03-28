@@ -16,10 +16,10 @@ const Portfolio = () => {
 
       <div className="container project__container">
         <Project img={IMG1} text="Millionaire Game" github="https://github.com/AshishRaj0602/MillionaireApp" live="https://millionaire0602.netlify.app/"/>
-        <Project img={IMG2} text="Online Payment App" github="" live=""/>
+        <Project img={IMG2} text="Online Payment App" github="https://github.com/AshishRaj0602/onlinepay" live="https://onlinepay0602.netlify.app/"/>
         <Project img={IMG3} text="Snake Game" github="https://github.com/AshishRaj0602/Snake-game" live="https://verdant-axolotl-0ccb2e.netlify.app/"/>
         <Project img={IMG4} text="Slack Clone" github="https://github.com/AshishRaj0602/myslack" live="https://ashishraj0602.github.io/myslack"/>
-        <Project img={IMG5} text="My Portfolio" github="" live=""/>
+        <Project img={IMG5} text="My Portfolio" github="https://github.com/AshishRaj0602/portfolio" live="https://ashishraj0602portfolio.netlify.app/"/>
         <ComminSoon img={IMG6} text="Airbnb clone"/>
         {/* <article className='project__item'>
           <div className="project__item-image">
